@@ -17,7 +17,7 @@ import org.openqa.selenium.io.FileHandler;
 public class Utility {
 	public static String getDataFromExcelsheet(int a,int b) throws EncryptedDocumentException, IOException
 	{
-		//public static void add()
+		//public static void add();
 	
 	String path = "C:\\Users\\HP\\Desktop\\New Microsoft Office Excel Worksheet.xlsx";
 			
