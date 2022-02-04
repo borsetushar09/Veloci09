@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.VerifyHeaderOfActitime">
+        <methods>
+          <include name="lauchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="initializePomclasses"/>
+          <include name="toVerifyUserTab"/>
+          <include name="Clearobjects"/>
+          <include name="toVerifyReportTab"/>
+          <include name="logoutActitimeHeader"/>
+          <include name="loginActiTime"/>
+        </methods>
+      </class> <!-- test.VerifyHeaderOfActitime -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.VerifyHeaderOfActitime">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="lauchBrowser"/>
+          <include name="initializePomclasses"/>
+          <include name="toVerifyUserTab"/>
+          <include name="Clearobjects"/>
+          <include name="toVerifyReportTab"/>
+          <include name="logoutActitimeHeader"/>
+          <include name="loginActiTime"/>
+        </methods>
+      </class> <!-- test.VerifyHeaderOfActitime -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
